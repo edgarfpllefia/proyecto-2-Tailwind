@@ -5,202 +5,272 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Proyecto 2 - Tailwind Edgar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "600px",
+            md: "800px",
+            lg: "1280px",
+            xl: "1400px",
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <div>
-      <header>
-        <h1>Aeterfield</h1>
+      <header
+        class="flex w-full justify-between p-5 fixed top-0 left-0 z-50 transform-none bg-transparent backdrop-blur-md"
+      >
+        <h1 class="font-bold text-3xl tracking-tight">Aetherfield</h1>
+
         <nav>
           <div>
-            <p>Product</p>
-            <p>Journal</p>
-            <p>About</p>
-            <p>Careers</p>
+            <ul class="hidden md:flex lg:flex">
+              <li>Product</li>
+              <li>Journal</li>
+              <li>About</li>
+              <li>Careers</li>
+              <li>Get Started</li>
+            </ul>
             <div>
-              <p>Get Started</p>
-              <img src="img/Arrow.svg" alt="" />
+              <img class="hidden" src="img/Arrow.svg" alt="" />
             </div>
-            <img src="/img/Vector.svg" alt="" />
           </div>
         </nav>
+        <img src="/img/mas.svg" alt="" />
       </header>
-      <body>
-        <section>
-          <div>
-            <h2>Sustainability insights, build for business</h2>
-            <p>
-              Track impact, reduce emissions, and accelerate progress—with
-              clarity and confidence.
-            </p>
-          </div>
+      <main class="pl-5 pr-5 pb-0">
+        <section
+          class="bg-[linear-gradient(to_bottom,#aad4fe_0%,#f8f1e1_80%,white_80%)] -mx-5"
+        >
+          <!-- Este gradiente lo he hecho con IA -->
           <div>
             <div>
-              <img src="" alt="" />
-              <p>· Request a demo</p>
+              <h2 class="text-4xl font-medium text-center mb-1 pt-30">
+                Sustainability insights,
+                <span class="font-semibold">built for business</span>
+              </h2>
+              <p class="text-center pl-7 pr-7 pt-1 text-[17px]">
+                Track impact, reduce emissions, and accelerate progress—with
+                clarity and confidence.
+              </p>
             </div>
-            <div>
-              <img src="" alt="" />
-              <p>· Explore the platform</p>
+            <div
+              class="flex justify-center flex-col items-center mt-7 mb-7 gap-3"
+            >
+              <div class="p-3 bg-black text-white">
+                <img src="" alt="" />
+                <p>· Request a demo</p>
+              </div>
+              <div class="p-3 bg-black text-white">
+                <img src="" alt="" />
+                <p>· Explore the platform</p>
+              </div>
             </div>
           </div>
           <div>
-            <img src="img/Hero image.svg" alt="" />
+            <img class="w-full pl-5 pr-5" src="img/Hero image.svg" alt="" />
           </div>
         </section>
-        <section>
-          <h3>
+        <section class="pt-10 pb-10">
+          <h3 class="text-[26px] text-center leading-7 font-bold mb-7">
             Everything you need to measure, model, and act on sustainability
           </h3>
           <div>
-            <img src="img/Image.svg" alt="" />
-            <div>
+            <img class="w-full mb-6" src="img/Image.svg" alt="" />
+            <div class="mb-6">
               <hr />
-              <div>
-                <div>
-                  <h4>Track</h4>
+              <div class="mt-4 mb-4">
+                <div class="flex justify-between">
+                  <h4 class="font-bold text-[20px]">Track</h4>
                   <h4>001</h4>
                 </div>
-                <p>Emissions, energy, and waste across your value chain</p>
+                <p class="text-[20px] mt-2">
+                  Emissions, energy, and waste across your value chain
+                </p>
               </div>
               <hr />
-              <div>
-                <div>
-                  <h4>Model</h4>
+              <div class="mt-4 mb-4">
+                <div class="flex justify-between">
+                  <h4 class="font-bold text-[20px]">Model</h4>
                   <h4>002</h4>
                 </div>
-                <p>Forecast performance and goal alignment</p>
+                <p class="text-[20px] mt-2">
+                  Forecast performance and goal alignment
+                </p>
               </div>
               <hr />
-              <div>
-                <div>
-                  <h4>Report</h4>
+              <div class="mt-4 mb-4">
+                <div class="flex justify-between">
+                  <h4 class="font-bold text-[20px]">Report</h4>
                   <h4>003</h4>
                 </div>
-                <p>Generate ESG disclosures, automate frameworks</p>
+                <p class="text-[20px] mt-2">
+                  Generate ESG disclosures, automate frameworks
+                </p>
               </div>
               <hr />
-              <div>
-                <div>
-                  <h4>Act</h4>
+              <div class="mt-4 mb-4">
+                <div class="flex justify-between">
+                  <h4 class="font-bold text-[20px]">Act</h4>
                   <h4>004</h4>
                 </div>
-                <p>Surface insights and operational next steps</p>
+                <p class="text-[20px] mt-2">
+                  Surface insights and operational next steps
+                </p>
               </div>
               <hr />
             </div>
-            <div>
-              <img src="" alt="" />
+            <div class="border bg-black text-white text-center p-4">
               <p>· Explore features</p>
             </div>
           </div>
         </section>
-        <section>
-          <div>
-            <h3>Built for clarity</h3>
-            <h3>Designed for action</h3>
+        <section class="pt-10 pb-10 bg-[#eee8d7] -mx-5">
+          <div class="mb-9">
+            <h3 class="text-[36px] text-center leading-10">
+              Built for clarity <br /><span class="font-semibold"
+                >Designed for action</span
+              >
+            </h3>
           </div>
-          <div>
-            <img src="" alt="" />
-            <h4>Clarity drives action</h4>
-            <p>
-              We believe better decisions start with better data— measured,
-              visible, and trusted.
-            </p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h4>Sustainability is a systems problem</h4>
-            <p>
-              We build tools that help teams connect the dots between
-              operations, impact, and accountability.
-            </p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h4>Progress over perfection</h4>
-            <p>
-              We support real-world momentum—helping organizations move from
-              ambition to measurable change.
-            </p>
+          <div class="flex flex-col gap-5 ml-5 mr-5">
+            <div class="rounded-2xl p-10 bg-white">
+              <img class="mb-6" src="img/icon1.svg" alt="" />
+              <h4 class="text-[22px] font-bold mb-2">Clarity drives action</h4>
+              <p class="text-[22px] leading-7">
+                We believe better decisions start with better data— measured,
+                visible, and trusted.
+              </p>
+            </div>
+            <div class="rounded-2xl p-10 bg-white">
+              <img class="mb-6" src="img/Icon2.svg" alt="" />
+              <h4 class="text-[22px] font-bold mb-2 leading-6">
+                Sustainability is a systems problem
+              </h4>
+              <p class="text-[22px] leading-7">
+                We build tools that help teams connect the dots between
+                operations, impact, and accountability.
+              </p>
+            </div>
+            <div class="rounded-2xl p-10 bg-white">
+              <img class="mb-6" src="img/Icon3.svg" alt="" />
+              <h4 class="text-[22px] font-bold mb-2">
+                Progress over perfection
+              </h4>
+              <p class="text-[22px] leading-7">
+                We support real-world momentum—helping organizations move from
+                ambition to measurable change.
+              </p>
+            </div>
           </div>
         </section>
-        <section>
-          <div>
-            <img src="" alt="" />
-            <h4>Why Acme Inc chose Aetherfield</h4>
-            <p>
+        <section class="pt-10 pb-10">
+          <div
+            class="rounded-2xl bg-[#F6F8FB] p-5 flex flex-col gap-5 bg-[#F6F8FB]"
+          >
+            <div>
+              <img class="w-full" src="img/readcase.svg" alt="" />
+            </div>
+            <h4 class="-mb-2 text-[20px] font-bold">
+              Why Acme Inc chose Aetherfield
+            </h4>
+            <p class="text-[20px]">
               With fragmented data and growing reporting pressure, Acme turned
               to Aetherfield to streamline their ESG workflows. The result?
               Faster decisions, fewer spreadsheets, and 34% more coverage.
             </p>
-            <div>
+            <div class="text-center border bg-black text-white p-3 text-[18px]">
               <p>Read case study</p>
             </div>
           </div>
         </section>
         <section>
-          <h3>From the journal</h3>
-          <hr />
+          <h3 class="text-center text-[28px] mb-6 font-bold">
+            From the journal
+          </h3>
           <div>
-            <img src="img/Journal1.svg" alt="" />
-            <h4>How to Build a Climate-Ready Data Stack</h4>
-            <p>Insights · 4 min</p>
-          </div>
-          <div>
-            <img src="img/Journal2.svg" alt="" />
-            <h4>
-              Sustainability Isn’t a Side Project: Making Impact Operational
-            </h4>
-            <p>Strategy · 7 min</p>
-          </div>
-          <div>
-            <img src="img/Journal3.svg" alt="" />
-            <h4>Inside the Aetherfield Model: How We Turn Data Into Action</h4>
-            <p>Insights · 5 min</p>
-          </div>
-          <div>
-            <p>View all articles</p>
+            <div class="border-t border-gray-300 pt-7">
+              <img class="w-full mb-5" src="img/Journal1.svg" alt="" />
+              <h4 class="text-[20px] font-[650] mb-2">
+                How to Build a Climate-Ready Data Stack
+              </h4>
+              <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+            </div>
+            <div class="border-t border-gray-300 pt-7">
+              <img class="w-full mb-5" src="img/Journal2.svg" alt="" />
+              <h4 class="text-[20px] font-[650] mb-2">
+                How to Build a Climate-Ready Data Stack
+              </h4>
+              <p class="text-[18px] text-gray-500 mb-5">Strategy · 7 min</p>
+            </div>
+            <div class="border-t border-gray-300 pt-7 border-b border-gray-300">
+              <img class="w-full mb-5" src="img/Journal3.svg" alt="" />
+              <h4 class="text-[20px] font-[650] mb-2">
+                How to Build a Climate-Ready Data Stack
+              </h4>
+              <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+            </div>
+            <div class="p-3 bg-black text-white text-center">
+              <p class="text-[16px]">View all articles</p>
+            </div>
           </div>
         </section>
-        <section>
+        <section class="pt-10 pb-10">
           <div>
-            <img src="img/blackman.svg" alt="" />
+            <img class="w-full" src="img/blackman.svg" alt="" />
           </div>
-          <div>
+          <div class="mt-10">
             <div>
               <img src="img/Quotation.svg" alt="" />
             </div>
-            <h3>
+            <h3 class="text-[26px] font-[650] leading-7 mb-8">
               We finally moved past spreadsheets and guesswork. Now we have real
               data to guide real decisions.
             </h3>
-            <h4>Elliot Williams</h4>
-            <p>Head of Sustainability, Flux Materials</p>
+            <h4 class="text-[22px] font-[650]">Elliot Williams</h4>
+            <p class="text-[18px]">Head of Sustainability, Flux Materials</p>
           </div>
         </section>
-        <section>
-          <h3>Ready to operationalize your sustainability goals?</h3>
-          <div>
+        <section
+          class="bg-[#F6F8FB] -mx-10 pt-10 pb-10 pl-5 pr-5 text-center flex flex-col gap-6 items-center"
+        >
+          <h3 class="text-[24px] leading-7 font-bold">
+            Ready to operationalize your sustainability goals?
+          </h3>
+          <div class="p-4 bg-black text-white w-fit">
             <p>· Request a demo</p>
           </div>
         </section>
-        <footer>
-          <div>
-            <nav>
-              <ul>
-                <li>Product</li>
-                <li>Journal</li>
-                <li>About</li>
-                <li>Careers</li>
-                <li>Get started</li>
-              </ul>
-            </nav>
-            <p>© 2025 · All rights reserved</p>
-          </div>
-          <img src="img/Footer image.svg" alt="" />
-          <h2>Aetherfield</h2>
-        </footer>
-      </body>
+      </main>
+      <footer class="bg-[#FFF546] pl-5 pr-5 pt-10 pb-10">
+        <div class="text-center">
+          <nav>
+            <ul
+              class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F]"
+            >
+              <li><a href="">Product</a></li>
+              <li><a href="">Journal</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Get started</a></li>
+            </ul>
+          </nav>
+          <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+        </div>
+        <img class="w-full" src="img/Footer image.svg" alt="" />
+        <h2 class="text-[70px] text-[#66640F] font-[900] font-sans">
+          Aetherfield
+        </h2>
+      </footer>
     </div>
   </body>
 </html>
