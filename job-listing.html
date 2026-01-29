@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proyecto 2 - job-listing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "600px",
+            md: "800px",
+            lg: "1280px",
+            xl: "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <header
+        class="flex w-full justify-between p-5 fixed top-0 left-0 z-50 transform-none bg-transparent backdrop-blur-md"
+      >
+        <h1 class="font-bold text-3xl tracking-tight">Aetherfield</h1>
+
+        <nav>
+          <div>
+            <ul
+              class="hidden md:flex lg:flex md:gap-5 mt-2 text-[16px] font-semibold"
+            >
+              <li>Product</li>
+              <li>Journal</li>
+              <li>About</li>
+              <li>Careers</li>
+              <li class="flex gap-3">
+                Get Started
+                <img class="hidden md:flex" src="img/Arrow.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <img class="md:hidden" src="/img/mas.svg" alt="" />
+      </header>
+      <main
+        class="pl-5 pr-5 pb-0 pt-32 bg-[linear-gradient(to_bottom,#aad4fe_0%,#f8f1e1_100%)] -mx-5 pb-30"
+      >
+        <div class="mb-10">
+          <p class="text-center text-[20px]">← Back to Careers</p>
+        </div>
+        <section class="pl-5 pr-5">
+          <div class="p-5 bg-white rounded-xl pb-8">
+            <div
+              class="flex flex-col gap-6 border-b pb-10 mb-8 border-[#DBE0EC]"
+            >
+              <div>
+                <h3 class="text-[26px] font-[650]">Data Scientist</h3>
+                <p class="text-[#6C6C6C] mb-3 text-[21px]">
+                  Full-time · Denver , CO
+                </p>
+                <p class="text-[20px] leading-6">
+                  Help build the intelligence layer for climate action. You'll
+                  turn complex sustainability data into clear, actionable
+                  insights for enterprise teams.
+                </p>
+              </div>
+              <div class="bg-black text-white text-center w-fit p-3">
+                <p>Apply now</p>
+              </div>
+            </div>
+            <div>
+              <h4 class="text-[21px] font-[650] mb-5">Company description</h4>
+              <p class="text-[21px] font-medium leading-6.5 mb-10">
+                At Aetherfield, we build software that empowers companies to
+                lead with climate accountability. Our platform helps
+                sustainability and operations teams make sense of complex
+                environmental data—transforming emissions, waste, and energy
+                metrics into measurable, meaningful action. We’re a
+                mission-driven team of technologists, designers, and scientists
+                working to accelerate the shift toward a low-carbon future.
+              </p>
+              <h4 class="text-[21px] font-[650] mb-5">About the role</h4>
+              <p class="text-[21px] font-medium leading-6.5 mb-10">
+                As a Data Scientist at Aetherfield, you’ll help shape the
+                analytical engine behind our platform. You’ll collaborate with
+                product and engineering teams to design models that interpret
+                environmental impact, forecast future trends, and uncover
+                actionable insights for our customers. Your work will directly
+                influence how companies plan, report, and act on their
+                sustainability strategies.
+              </p>
+              <h4 class="text-[21px] font-[650] mb-5">Requirements</h4>
+              <ul class="text-[21px] font-medium leading-6.5 mb-10">
+                <li class="mb-2 pl-5 -indent-5">
+                  · 3+ years of experience in data science or applied analytics
+                  (Python, SQL, etc.)
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Experience working with climate, sustainability, or supply
+                  chain datasets is a plus
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Strong foundation in statistics and data modeling
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Ability to communicate complex insights clearly to both
+                  technical and non-technical teams
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Curiosity, clarity, and care in how you approach messy data
+                </li>
+                <li class="pl-5 -indent-5">
+                  · Passion for solving real-world problems with purpose and
+                  precision
+                </li>
+              </ul>
+              <h4 class="text-[21px] font-[650] mb-5">Company benefits</h4>
+              <ul class="text-[21px] font-medium leading-6.5 mb-10">
+                <li class="mb-2 pl-5 -indent-5">
+                  · Competitive salary and equity options
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Flexible, hybrid work environment
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Generous PTO and paid volunteer days
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Annual sustainability stipend
+                </li>
+                <li class="mb-2 pl-5 -indent-5">
+                  · Team offsites and climate-focused retreats
+                </li>
+                <li class="pl-5 -indent-5">
+                  · A mission-first culture that values clarity, impact, and
+                  integrity
+                </li>
+              </ul>
+            </div>
+            <hr class="border-[#DBE0EC] mb-8" />
+            <section class="flex flex-col items-center gap-6">
+              <h2 class="text-center text-[28px] leading-6 font-[650]">
+                Ready to help build the future of climate intelligence?
+              </h2>
+              <div class="bg-black text-white p-4 w-fit">
+                <p>· Apply now</p>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[#FFF546] pl-5 pr-5 pt-10 pb-10">
+        <div class="text-center">
+          <nav>
+            <ul
+              class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F]"
+            >
+              <li><a href="">Product</a></li>
+              <li><a href="">Journal</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Get started</a></li>
+            </ul>
+          </nav>
+          <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+        </div>
+        <img class="w-full" src="img/Footer image.svg" alt="" />
+        <h2 class="text-[70px] text-[#66640F] font-black font-sans">
+          Aetherfield
+        </h2>
+      </footer>
+    </div>
+  </body>
+</html>
