@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,19 +33,21 @@
 
         <nav>
           <div>
-            <ul class="hidden md:flex lg:flex">
+            <ul
+              class="hidden md:flex lg:flex md:gap-5 mt-2 text-[16px] font-semibold"
+            >
               <li>Product</li>
               <li>Journal</li>
               <li>About</li>
               <li>Careers</li>
-              <li>Get Started</li>
+              <li class="flex gap-3">
+                Get Started
+                <img class="hidden md:flex" src="img/Arrow.svg" alt="" />
+              </li>
             </ul>
-            <div>
-              <img class="hidden" src="img/Arrow.svg" alt="" />
-            </div>
           </div>
         </nav>
-        <img src="/img/mas.svg" alt="" />
+        <img class="md:hidden" src="/img/mas.svg" alt="" />
       </header>
       <main class="pl-5 pr-5 pb-0 mt-20">
         <section>
