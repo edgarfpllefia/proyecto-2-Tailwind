@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -27,14 +27,16 @@
   <body>
     <div>
       <header
-        class="flex w-full justify-between p-5 fixed top-0 left-0 z-50 transform-none bg-transparent backdrop-blur-md"
+        class="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md"
       >
-        <h1 class="font-bold text-3xl tracking-tight">Aetherfield</h1>
+        <div
+          class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center"
+        >
+          <h1 class="font-bold text-3xl tracking-tight">Aetherfield</h1>
 
-        <nav>
-          <div>
+          <nav>
             <ul
-              class="hidden md:flex lg:flex md:gap-5 mt-2 text-[16px] font-semibold"
+              class="hidden md:flex lg:flex md:gap-5 text-[16px] font-semibold"
             >
               <li>Product</li>
               <li>Journal</li>
@@ -45,240 +47,368 @@
                 <img class="hidden md:flex" src="img/Arrow.svg" alt="" />
               </li>
             </ul>
-          </div>
-        </nav>
-        <img class="md:hidden" src="/img/mas.svg" alt="" />
+          </nav>
+          <img class="md:hidden" src="img/mas.svg" alt="" />
+        </div>
       </header>
-      <main class="pl-5 pr-5">
-        <section class="-mx-5 flex flex-col gap-6">
-          <div>
-            <img class="w-full" src="img/about/about1.svg" alt="" />
-          </div>
-          <div class="pl-5 pr-5 md:px-30 md:py-10">
-            <h4 class="text-[#6C6C6C] mb-4">Our mission</h3>
-            <h3 class="text-[25px] font-[650] leading-6 mb-7 md:pr-5 md:text-[32px] md:leading-8">
-              Climate action starts with better information. We help
-              organizations turn complex data into measurable, meaningful
-              change.
-            </h2>
-            <div class="p-4 bg-black text-white text-center md:w-fit md:mt-10">
-              <p>· Meet the team</p>
+      <main>
+        <section>
+          <div class="lg:max-w-7xl lg:mx-auto">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+              <div class="lg:flex-1">
+                <img
+                  class="w-full lg:hidden"
+                  src="img/about/about1.svg"
+                  alt=""
+                />
+                <img
+                  class="w-full hidden lg:block lg:min-w-150"
+                  src="img/about/aboutDesktop.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="px-5 md:px-30 md:py-10 lg:flex-1 lg:flex lg:flex-col lg:justify-center lg:px-20"
+              >
+                <h4 class="text-[#6C6C6C] mb-4">Our mission</h4>
+                <h3
+                  class="text-[25px] font-[650] leading-6 mb-7 md:pr-5 md:text-[32px] md:leading-8 lg:text-[40px] lg:leading-none"
+                >
+                  Climate action starts with better information. We help
+                  organizations turn complex data into measurable, meaningful
+                  change.
+                </h3>
+                <div
+                  class="p-4 bg-black text-white text-center md:w-fit md:mt-10"
+                >
+                  <p>· Meet the team</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="pt-10 pb-10">
-            <h3 class="text-center text-[22px] font-[650] mb-6 md:text-[32px]">Our values</h3>
-            <div class="flex flex-col gap-5">
-            <div class="rounded-2xl p-10 bg-[#F6F8FB] ">
-              <img class="mb-6" src="img/icon1.svg" alt="" />
-              <h4 class="text-[22px] font-bold mb-2 ">Clarity drives action</h4>
-              <p class="text-[22px] leading-7 md:text-[22px]">
-                We believe better decisions start with better data— measured,
-                visible, and trusted.
-              </p>
-            </div>
-            <div class="rounded-2xl p-10 bg-[#F6F8FB]">
-              <img class="mb-6" src="img/Icon2.svg" alt="" />
-              <h4 class="text-[22px] font-bold mb-2 leading-6">
-                Sustainability is a systems problem
-              </h4>
-              <p class="text-[22px] leading-7">
-                We build tools that help teams connect the dots between
-                operations, impact, and accountability.
-              </p>
-            </div>
-            <div class="rounded-2xl p-10 bg-[#F6F8FB]">
-              <img class="mb-6" src="img/Icon3.svg" alt="" />
-              <h4 class="text-[22px] font-bold mb-2">
-                Progress over perfection
-              </h4>
-              <p class="text-[22px] leading-7">
-                We support real-world momentum—helping organizations move from
-                ambition to measurable change.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="pb-10 md:flex md:gap-16">
-            <div class="pb-5 md:flex-1">
-                <img class="w-full" src="img/about/about2.svg" alt="">
-            </div>
-            <div class="md:flex-1">
-                <p class="text-[19px] mb-3 text-[#6C6C6C] md:mb-0">
-                    Founder’s story
+        <section class="pt-10 pb-10 lg:mt-10">
+          <div class="max-w-7xl mx-auto px-5">
+            <h3
+              class="text-center text-[22px] font-[650] mb-6 md:text-[32px] lg:text-[40px]"
+            >
+              Our values
+            </h3>
+            <div class="flex flex-col gap-5 lg:grid lg:grid-cols-3">
+              <div class="rounded-2xl p-10 bg-[#F6F8FB]">
+                <img class="mb-6" src="img/icon1.svg" alt="" />
+                <h4 class="text-[22px] font-bold mb-2 lg:text-[20px]">
+                  Clarity drives action
+                </h4>
+                <p
+                  class="text-[22px] leading-7 md:text-[22px] lg:text-[20px] lg:leading-none"
+                >
+                  We believe better decisions start with better data— measured,
+                  visible, and trusted.
                 </p>
-                <h2 class="text-4xl font-[650] mb-7 md:text-[48px]">Eunji Park</h2>
-
-            <p class="text-[19px] leading-6 font-medium">Eunji founded Aetherfield with one goal: to help companies take climate action without waiting for a perfect plan. With a background in environmental systems and software design, she’s spent the past decade building tools that turn impact goals into real-world outcomes. She still insists on biking to every investor meeting.</p>
+              </div>
+              <div class="rounded-2xl p-10 bg-[#F6F8FB]">
+                <img class="mb-6" src="img/Icon2.svg" alt="" />
+                <h4 class="text-[22px] font-bold mb-2 leading-6 lg:text-[20px]">
+                  Sustainability is a systems problem
+                </h4>
+                <p class="text-[22px] leading-7 lg:text-[20px] lg:leading-none">
+                  We build tools that help teams connect the dots between
+                  operations, impact, and accountability.
+                </p>
+              </div>
+              <div class="rounded-2xl p-10 bg-[#F6F8FB]">
+                <img class="mb-6" src="img/Icon3.svg" alt="" />
+                <h4 class="text-[22px] font-bold mb-2 lg:text-[20px]">
+                  Progress over perfection
+                </h4>
+                <p class="text-[22px] leading-7 lg:text-[20px] lg:leading-none">
+                  We support real-world momentum—helping organizations move from
+                  ambition to measurable change.
+                </p>
+              </div>
             </div>
+          </div>
         </section>
-        <section class="pb-10 bg-[#F6F8FB] -mx-5 md:pt-20 md:hidden">
-            <h2 class="text-[36px] font-[650] mb-7 px-5 md:text-[48px]">Meet the team</h2>
+        <section class="pb-10 lg:mt-25">
+          <div class="max-w-7xl mx-auto px-5 md:flex md:gap-16">
+            <div class="pb-5 md:flex-1">
+              <img class="w-full" src="img/about/about2.svg" alt="" />
+            </div>
+            <div
+              class="md:flex-1 lg:flex lg:flex-col lg:justify-center lg:w-fit lg:min-w-[600px] lg:max-w-[600px] lg:px-22"
+            >
+              <p class="text-[19px] mb-3 text-[#6C6C6C] md:mb-0">
+                Founder's story
+              </p>
+              <h2
+                class="text-4xl font-[650] mb-7 md:text-[48px] lg:text-[56px]"
+              >
+                Eunji Park
+              </h2>
+
+              <p class="text-[19px] leading-6 font-medium">
+                Eunji founded Aetherfield with one goal: to help companies take
+                climate action without waiting for a perfect plan. With a
+                background in environmental systems and software design, she's
+                spent the past decade building tools that turn impact goals into
+                real-world outcomes. She still insists on biking to every
+                investor meeting.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="pb-10 bg-[#F6F8FB] md:pt-20 md:hidden">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="text-[36px] font-[650] mb-7 px-5 md:text-[48px]">
+              Meet the team
+            </h2>
             <div class="px-5">
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div   class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                <div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1">
-                    <p class="font-[650] text-[22px]">John McClelland</p>
-                    <p class="text-[22px]">Director of Technology</p>
-                    <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
-                </div>
-                
-
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
             </div>
+          </div>
         </section>
-        <section class="pb-10 bg-[#F6F8FB] -mx-5 md:pt-20 hidden md:block">
-            <h2 class="text-[36px] font-[650] mb-7 px-5 md:text-[48px]">Meet the team</h2>
+        <section class="pb-10 bg-[#F6F8FB] md:pt-20 hidden md:block">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="text-[36px] font-[650] mb-7 px-5 md:text-[48px]">
+              Meet the team
+            </h2>
             <div class="px-5">
-              <div class="border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="text-[16px]">Name</p>
-    <p class="text-[16px]">Title</p>
-    <p class="text-[16px] text-right">Contact</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Eunji Park</p>
-    <p class="text-[18px]">Founder</p>
-    <p class="underline text-[18px] text-right">e.park@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Al Gorithm</p>
-    <p class="text-[18px]">Senior Systems Architect</p>
-    <p class="underline text-[18px] text-right">a.gorithm@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Cassandra Query</p>
-    <p class="text-[18px]">Head of Data Platforms</p>
-    <p class="underline text-[18px] text-right">c.query@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Sue Logic</p>
-    <p class="text-[18px]">Principal Software Engineer</p>
-    <p class="underline text-[18px] text-right">s.logic@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Dash Bordman</p>
-    <p class="text-[18px]">Product Manager</p>
-    <p class="underline text-[18px] text-right">d.bordman@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Greta Watt</p>
-    <p class="text-[18px]">Director of Climate Strategy</p>
-    <p class="underline text-[18px] text-right">g.watt@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Gail Force</p>
-    <p class="text-[18px]">Environmental Risk Analyst</p>
-    <p class="underline text-[18px] text-right">g.force@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Polly Nation</p>
-    <p class="text-[18px]">UX Designer</p>
-    <p class="underline text-[18px] text-right">p.nation@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Will O'Watt</p>
-    <p class="text-[18px]">Clean Energy Solutions Manager</p>
-    <p class="underline text-[18px] text-right">w.owatt@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Lana Terra</p>
-    <p class="text-[18px]">Earth Systems Research</p>
-    <p class="underline text-[18px] text-right">l.terra@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Ella Vation</p>
-    <p class="text-[18px]">Earth Systems Researcher</p>
-    <p class="underline text-[18px] text-right">e.vation@aetherfield.com</p>
-</div>
-<div class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4">
-    <p class="font-[650] text-[18px]">Phil Scope</p>
-    <p class="text-[18px]">Lifecycle Assessment Lead</p>
-    <p class="underline text-[18px] text-right">p.scope@aetherfield.com</p>
-</div>
-                
-
+              <div
+                class="border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="text-[16px]">Name</p>
+                <p class="text-[16px]">Title</p>
+                <p class="text-[16px] text-right">Contact</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Eunji Park</p>
+                <p class="text-[18px]">Founder</p>
+                <p class="underline text-[18px] text-right">
+                  e.park@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Al Gorithm</p>
+                <p class="text-[18px]">Senior Systems Architect</p>
+                <p class="underline text-[18px] text-right">
+                  a.gorithm@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Cassandra Query</p>
+                <p class="text-[18px]">Head of Data Platforms</p>
+                <p class="underline text-[18px] text-right">
+                  c.query@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Sue Logic</p>
+                <p class="text-[18px]">Principal Software Engineer</p>
+                <p class="underline text-[18px] text-right">
+                  s.logic@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Dash Bordman</p>
+                <p class="text-[18px]">Product Manager</p>
+                <p class="underline text-[18px] text-right">
+                  d.bordman@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Greta Watt</p>
+                <p class="text-[18px]">Director of Climate Strategy</p>
+                <p class="underline text-[18px] text-right">
+                  g.watt@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Gail Force</p>
+                <p class="text-[18px]">Environmental Risk Analyst</p>
+                <p class="underline text-[18px] text-right">
+                  g.force@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Polly Nation</p>
+                <p class="text-[18px]">UX Designer</p>
+                <p class="underline text-[18px] text-right">
+                  p.nation@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Will O'Watt</p>
+                <p class="text-[18px]">Clean Energy Solutions Manager</p>
+                <p class="underline text-[18px] text-right">
+                  w.owatt@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Lana Terra</p>
+                <p class="text-[18px]">Earth Systems Research</p>
+                <p class="underline text-[18px] text-right">
+                  l.terra@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Ella Vation</p>
+                <p class="text-[18px]">Earth Systems Researcher</p>
+                <p class="underline text-[18px] text-right">
+                  e.vation@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Phil Scope</p>
+                <p class="text-[18px]">Lifecycle Assessment Lead</p>
+                <p class="underline text-[18px] text-right">
+                  p.scope@aetherfield.com
+                </p>
+              </div>
             </div>
+          </div>
         </section>
-        <section class="-mx-5 text-center pt-10 pb-10 flex flex-col items-center">
-            <h3 class="text-[28px] leading-7 font-[650] mb-10">We’re hiring! Want to join the team?</h3>
-            <div class="bg-black text-white p-4 w-fit">
-                <p>· View open roles</p>
+        <section class="text-center pt-10 pb-10 flex flex-col items-center">
+          <div class="max-w-7xl mx-auto px-5 lg:py-20">
+            <h3 class="text-[28px] leading-7 font-[650] mb-10 lg:text-[40px]">
+              We're hiring! Want to join the team?
+            </h3>
+            <div class="bg-black text-white p-4 w-fit mx-auto">
+              <p>· View open roles</p>
             </div>
+          </div>
         </section>
       </main>
-      <footer class="bg-[#FFF546] pl-5 pr-5 pt-10 pb-10 md:pt-5 md:pb-5">
-        <div class="text-center md:flex md:justify-between">
-          <nav>
-            <ul
-              class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
-            >
-              <li><a href="">Product</a></li>
-              <li><a href="">Journal</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Get started</a></li>
-            </ul>
-          </nav>
-          <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+      <footer class="bg-[#FFF546] w-full">
+        <div class="max-w-7xl mx-auto px-5 pt-10 pb-10 md:pt-5 md:pb-5">
+          <div class="text-center md:flex md:justify-between">
+            <nav>
+              <ul
+                class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
+              >
+                <li><a href="">Product</a></li>
+                <li><a href="">Journal</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Get started</a></li>
+              </ul>
+            </nav>
+            <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+          </div>
+          <img class="w-full" src="img/Footer image.svg" alt="" />
+          <p
+            class="text-[16vw] text-center text-[#66640F] font-black font-sans md:text-[16.5vw] lg:text-[211px]"
+          >
+            Aetherfield
+          </p>
         </div>
-        <img class="w-full" src="img/Footer image.svg" alt="" />
-        <p
-          class="w-full text-[16vw] text-center text-[#66640F] font-black font-sans md:text-[16.5vw]"
-        >
-          Aetherfield
-        </p>
       </footer>
     </div>
   </body>

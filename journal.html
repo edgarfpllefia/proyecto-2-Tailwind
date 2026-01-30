@@ -27,14 +27,16 @@
   <body>
     <div>
       <header
-        class="flex w-full justify-between p-5 fixed top-0 left-0 z-50 transform-none bg-transparent backdrop-blur-md"
+        class="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md"
       >
-        <h1 class="font-bold text-3xl tracking-tight">Aetherfield</h1>
+        <div
+          class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center"
+        >
+          <h1 class="font-bold text-3xl tracking-tight">Aetherfield</h1>
 
-        <nav>
-          <div>
+          <nav>
             <ul
-              class="hidden md:flex lg:flex md:gap-5 mt-2 text-[16px] font-semibold"
+              class="hidden md:flex lg:flex md:gap-5 text-[16px] font-semibold"
             >
               <li>Product</li>
               <li>Journal</li>
@@ -45,117 +47,155 @@
                 <img class="hidden md:flex" src="img/Arrow.svg" alt="" />
               </li>
             </ul>
-          </div>
-        </nav>
-        <img class="md:hidden" src="/img/mas.svg" alt="" />
+          </nav>
+          <img class="md:hidden" src="img/mas.svg" alt="" />
+        </div>
       </header>
-      <main class="pl-5 pr-5 pb-0 mt-20">
+      <main class="pb-0 mt-20">
         <section>
-          <img class="w-full" src="img/journal/journal1.svg" alt="" />
+          <div class="max-w-7xl mx-auto">
+            <img class="w-full" src="img/journal/journal1.svg" alt="" />
+          </div>
         </section>
         <section class="pt-6 pb-4">
-          <h2 class="text-center mb-6 text-3xl font-bold">Latest articles</h2>
-          <article class="mb-18">
-            <img class="w-full mb-5" src="img/journal/journal2.svg" alt="" />
-            <h3 class="text-xl font-bold">
-              How to Build a Climate-Ready Data Stack
-            </h3>
-            <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
-            <p class="text-[19px] font-semibold">
-              A practical guide for sustainability teams on integrating
-              emissions, waste, and energy data into modern workflows.
-            </p>
-          </article>
-          <article class="mb-18">
-            <img class="w-full mb-5" src="img/journal/journal3.svg" alt="" />
-            <h3 class="text-xl font-bold">
-              How to Build a Climate-Ready Data Stack
-            </h3>
-            <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
-            <p class="text-[19px] font-semibold">
-              A practical guide for sustainability teams on integrating
-              emissions, waste, and energy data into modern workflows.
-            </p>
-          </article>
-          <article class="mb-18">
-            <img class="w-full mb-5" src="img/journal/journal4.svg" alt="" />
-            <h3 class="text-xl font-bold">
-              How to Build a Climate-Ready Data Stack
-            </h3>
-            <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
-            <p class="text-[19px] font-semibold">
-              A practical guide for sustainability teams on integrating
-              emissions, waste, and energy data into modern workflows.
-            </p>
-          </article>
-          <article class="mb-18">
-            <img class="w-full mb-5" src="img/journal/journal5.svg" alt="" />
-            <h3 class="text-xl font-bold">
-              How to Build a Climate-Ready Data Stack
-            </h3>
-            <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
-            <p class="text-[19px] font-semibold">
-              A practical guide for sustainability teams on integrating
-              emissions, waste, and energy data into modern workflows.
-            </p>
-          </article>
-          <article class="mb-18">
-            <img class="w-full mb-5" src="img/journal/journal6.svg" alt="" />
-            <h3 class="text-xl font-bold">
-              How to Build a Climate-Ready Data Stack
-            </h3>
-            <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
-            <p class="text-[19px] font-semibold">
-              A practical guide for sustainability teams on integrating
-              emissions, waste, and energy data into modern workflows.
-            </p>
-          </article>
-          <article class="mb-18">
-            <img class="w-full mb-5" src="img/journal/journal7.svg" alt="" />
-            <h3 class="text-xl font-bold">
-              How to Build a Climate-Ready Data Stack
-            </h3>
-            <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
-            <p class="text-[19px] font-semibold">
-              A practical guide for sustainability teams on integrating
-              emissions, waste, and energy data into modern workflows.
-            </p>
-          </article>
+          <div class="max-w-7xl mx-auto px-5 lg:mt-10">
+            <h2 class="text-center mb-6 text-3xl font-bold lg:mb-10">
+              Latest articles
+            </h2>
+            <div class="lg:grid lg:grid-cols-2 lg:gap-5">
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal2.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal3.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal4.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal5.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal6.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal7.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+            </div>
+          </div>
         </section>
         <section
-          class="bg-[#F6F8FB] -mx-5 flex flex-col justify-center items-center pt-10 pb-10 pl-5 pr-5 md:py-17"
+          class="bg-[#F6F8FB] flex flex-col justify-center items-center pt-10 pb-10 md:py-17"
         >
-          <h2 class="text-center text-[26px] font-bold mb-6 md:text-[32px]">
-            Subscribe to Aetherfield Journal
-          </h2>
-          <div
-            class="text-center p-4 bg-black text-white w-fit text-[20px] md:text-[16px]"
-          >
-            <p>· Sign up to newsletter</p>
+          <div class="max-w-7xl mx-auto px-5">
+            <h2
+              class="text-center text-[26px] font-bold mb-6 md:text-[32px] lg:text-[40px]"
+            >
+              Subscribe to Aetherfield Journal
+            </h2>
+            <div
+              class="text-center p-4 bg-black text-white w-fit text-[20px] md:text-[16px] mx-auto"
+            >
+              <p>· Sign up to newsletter</p>
+            </div>
           </div>
         </section>
       </main>
-      <footer class="bg-[#FFF546] pl-5 pr-5 pt-10 pb-10 md:pt-5 md:pb-5">
-        <div class="text-center md:flex md:justify-between">
-          <nav>
-            <ul
-              class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
-            >
-              <li><a href="">Product</a></li>
-              <li><a href="">Journal</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Careers</a></li>
-              <li><a href="">Get started</a></li>
-            </ul>
-          </nav>
-          <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+      <footer class="bg-[#FFF546] w-full">
+        <div class="max-w-7xl mx-auto px-5 pt-10 pb-10 md:pt-5 md:pb-5">
+          <div class="text-center md:flex md:justify-between">
+            <nav>
+              <ul
+                class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
+              >
+                <li><a href="">Product</a></li>
+                <li><a href="">Journal</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Get started</a></li>
+              </ul>
+            </nav>
+            <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+          </div>
+          <img class="w-full" src="img/Footer image.svg" alt="" />
+          <p
+            class="text-[16vw] text-center text-[#66640F] font-black font-sans md:text-[16.5vw] lg:text-[211px]"
+          >
+            Aetherfield
+          </p>
         </div>
-        <img class="w-full" src="img/Footer image.svg" alt="" />
-        <p
-          class="w-full text-[16vw] text-center text-[#66640F] font-black font-sans md:text-[16.5vw]"
-        >
-          Aetherfield
-        </p>
       </footer>
     </div>
   </body>
