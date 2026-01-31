@@ -27,7 +27,8 @@
   <body>
     <div>
       <header
-        class="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md"
+        class="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md opacity-0 -translate-y-8 transition-all duration-500 delay-1000"
+        data-animateDos
       >
         <div
           class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center"
@@ -36,15 +37,35 @@
 
           <nav>
             <ul
-              class="hidden md:flex lg:flex md:gap-5 text-[16px] font-semibold"
+              class="hidden md:flex lg:flex md:gap-5 text-[16px] font-bold lg:gap-6 lg:font-bold"
             >
-              <li>Product</li>
-              <li>Journal</li>
-              <li>About</li>
-              <li>Careers</li>
-              <li class="flex gap-3">
-                Get Started
-                <img class="hidden md:flex" src="img/Arrow.svg" alt="" />
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="">Product</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="">Journal</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="">About</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="">Careers</a>
+              </li>
+              <li class="flex gap-1 cursor-pointer group">
+                <a href="">Get Started</a>
+                <img
+                  class="hidden md:flex transition-transform duration-500 group-hover:translate-x-1"
+                  src="img/Arrow.svg"
+                  alt=""
+                />
               </li>
             </ul>
           </nav>
@@ -53,7 +74,10 @@
       </header>
       <main class="pb-0 mt-20">
         <section>
-          <div class="max-w-7xl mx-auto">
+          <div
+            class="max-w-7xl mx-auto opacity-0 translate-y-30 transition-all duration-700"
+            data-animate
+          >
             <img class="w-full" src="img/journal/journal1.svg" alt="" />
           </div>
         </section>
@@ -62,7 +86,10 @@
             <h2 class="text-center mb-6 text-3xl font-bold lg:mb-10">
               Latest articles
             </h2>
-            <div class="lg:grid lg:grid-cols-2 lg:gap-5">
+            <div
+              class="lg:grid lg:grid-cols-2 lg:gap-5 opacity-0 translate-y-30 transition-all duration-700"
+              data-animate
+            >
               <article class="mb-18">
                 <img
                   class="w-full mb-5"
@@ -166,7 +193,7 @@
               Subscribe to Aetherfield Journal
             </h2>
             <div
-              class="text-center p-4 bg-black text-white w-fit text-[20px] md:text-[16px] mx-auto"
+              class="text-center p-4 bg-black text-white w-fit text-[20px] md:text-[16px] mx-auto hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
             >
               <p>· Sign up to newsletter</p>
             </div>
@@ -180,11 +207,21 @@
               <ul
                 class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
               >
-                <li><a href="">Product</a></li>
-                <li><a href="">Journal</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Careers</a></li>
-                <li><a href="">Get started</a></li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Product</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Journal</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">About</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Careers</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Get started</a>
+                </li>
               </ul>
             </nav>
             <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
@@ -198,5 +235,65 @@
         </div>
       </footer>
     </div>
+    <script>
+      // Configuració de l'Intersection Observer
+      const observerOptions = {
+        threshold: 0.1, // Dispara quan el 10% de l'element és visible
+        rootMargin: "0px 0px -50px 0px", // Dispara 50px abans que l'element sigui completament visible
+      };
+
+      // Crear l'observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "translate-y-30");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      const scaleObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("scale-0", "opacity-0");
+            entry.target.classList.add("scale-100", "opacity-100");
+            scaleObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions); // <-- Usa el observerOptions que ya existe
+
+      document.querySelectorAll("[data-scale]").forEach((el) => {
+        scaleObserver.observe(el);
+      });
+
+      const observerDos = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "-translate-y-10");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animateDos]").forEach((el) => {
+        observer.observe(el);
+      });
+    </script>
   </body>
 </html>
