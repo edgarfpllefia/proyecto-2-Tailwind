@@ -33,7 +33,7 @@
         <div
           class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center"
         >
-          <h1 class="font-bold text-3xl tracking-tight">Aetherfield</h1>
+          <h1 class="font-bold text-3xl tracking-tight z-999">Aetherfield</h1>
 
           <nav>
             <ul
@@ -42,25 +42,25 @@
               <li
                 class="hover:opacity-40 transition-all duration-500 cursor-pointer"
               >
-                <a href="">Product</a>
+                <a href="index.html">Product</a>
               </li>
               <li
                 class="hover:opacity-40 transition-all duration-500 cursor-pointer"
               >
-                <a href="">Journal</a>
+                <a href="journal.html">Journal</a>
               </li>
               <li
                 class="hover:opacity-40 transition-all duration-500 cursor-pointer"
               >
-                <a href="">About</a>
+                <a href="about.html">About</a>
               </li>
               <li
                 class="hover:opacity-40 transition-all duration-500 cursor-pointer"
               >
-                <a href="">Careers</a>
+                <a href="careers.html">Careers</a>
               </li>
               <li class="flex gap-1 cursor-pointer group">
-                <a href="">Get Started</a>
+                <a href="index.html">Get Started</a>
                 <img
                   class="hidden md:flex transition-transform duration-500 group-hover:translate-x-1"
                   src="img/Arrow.svg"
@@ -69,7 +69,52 @@
               </li>
             </ul>
           </nav>
-          <img class="md:hidden" src="img/mas.svg" alt="" />
+
+          <button
+            id="menuButton"
+            class="md:hidden text-3xl font-bold transition-transform duration-300 cursor-pointer z-50"
+          >
+            +
+          </button>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden fixed top-0 left-0 w-full bg-white shadow-lg transition-all duration-500 -translate-y-full opacity-0 z-40"
+        >
+          <div class="px-5 pt-20 pb-10">
+            <nav>
+              <ul class="text-[32px] font-semibold space-y-6">
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="index.html">Product</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="journal.html">Journal</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="about.html">About</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="careers.html">Careers</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mt-10">
+              <div
+                class="bg-black text-white text-center p-4 hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p class="text-[20px]">Get started</p>
+              </div>
+            </div>
+          </div>
         </div>
       </header>
       <main
@@ -320,6 +365,47 @@
 
       document.querySelectorAll("[data-rotate]").forEach((el) => {
         rotateObserver.observe(el);
+      });
+
+      // Menú móvil
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      let menuOpen = false;
+
+      function closeMenu() {
+        menuOpen = false;
+        menuButton.textContent = "+";
+        menuButton.style.transform = "rotate(0deg)";
+        mobileMenu.classList.add("-translate-y-full", "opacity-0");
+        mobileMenu.classList.remove("translate-y-0", "opacity-100");
+      }
+
+      function openMenu() {
+        menuOpen = true;
+        menuButton.textContent = "×";
+        menuButton.style.transform = "rotate(90deg)";
+        mobileMenu.classList.remove("-translate-y-full", "opacity-0");
+        mobileMenu.classList.add("translate-y-0", "opacity-100");
+      }
+
+      menuButton.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (menuOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Cerrar menú al clicar fuera
+      document.addEventListener("click", (e) => {
+        if (
+          menuOpen &&
+          !mobileMenu.contains(e.target) &&
+          e.target !== menuButton
+        ) {
+          closeMenu();
+        }
       });
     </script>
   </body>
