@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proyecto 2 - About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "600px",
+            md: "800px",
+            lg: "1280px",
+            xl: "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <header
+        class="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md opacity-0 -translate-y-8 transition-all duration-500 delay-1000"
+        data-animateDos
+      >
+        <div
+          class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center"
+        >
+          <h1 class="font-bold text-3xl tracking-tight z-999">Aetherfield</h1>
+
+          <nav>
+            <ul
+              class="hidden md:flex lg:flex md:gap-5 text-[16px] font-bold lg:gap-6 lg:font-bold"
+            >
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="index.html">Product</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="journal.html">Journal</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="about.html">About</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="careers.html">Careers</a>
+              </li>
+              <li class="flex gap-1 cursor-pointer group">
+                <a href="index.html">Get Started</a>
+                <img
+                  class="hidden md:flex transition-transform duration-500 group-hover:translate-x-1"
+                  src="img/Arrow.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            id="menuButton"
+            class="md:hidden text-3xl font-bold transition-transform duration-300 cursor-pointer z-50"
+          >
+            +
+          </button>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden fixed top-0 left-0 w-full bg-white shadow-lg transition-all duration-500 -translate-y-full opacity-0 z-40"
+        >
+          <div class="px-5 pt-20 pb-10">
+            <nav>
+              <ul class="text-[32px] font-semibold space-y-6">
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="index.html">Product</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="journal.html">Journal</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="about.html">About</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="careers.html">Careers</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mt-10">
+              <div
+                class="bg-black text-white text-center p-4 hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p class="text-[20px]">Get started</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="lg:max-w-7xl lg:mx-auto">
+            <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+              <div
+                class="lg:flex-1 opacity-0 translate-y-30 transition-all duration-700"
+                data-animate
+              >
+                <img
+                  class="w-full lg:hidden"
+                  src="img/about/about1.svg"
+                  alt=""
+                />
+                <img
+                  class="w-full hidden lg:block lg:min-w-150"
+                  src="img/about/aboutDesktop.svg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="px-5 md:px-30 md:py-10 lg:flex-1 lg:flex lg:flex-col lg:justify-center lg:px-20 opacity-0 translate-y-30 transition-all duration-700 delay-300"
+                data-animate
+              >
+                <h4 class="text-[#6C6C6C] mb-4">Our mission</h4>
+                <h3
+                  class="text-[25px] font-[650] leading-6 mb-7 md:pr-5 md:text-[32px] md:leading-8 lg:text-[40px] lg:leading-none"
+                >
+                  Climate action starts with better information. We help
+                  organizations turn complex data into measurable, meaningful
+                  change.
+                </h3>
+                <div
+                  class="p-4 bg-black text-white text-center md:w-fit md:mt-10 hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+                >
+                  <p>· Meet the team</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pt-10 pb-10 lg:mt-10">
+          <div class="max-w-7xl mx-auto px-5">
+            <h3
+              class="text-center text-[22px] font-[650] mb-6 md:text-[32px] lg:text-[40px] opacity-0 translate-y-30 transition-all duration-700"
+              data-animate
+            >
+              Our values
+            </h3>
+            <div
+              class="flex flex-col gap-5 lg:grid lg:grid-cols-3 opacity-0 translate-y-30 transition-all duration-700"
+              data-animate
+            >
+              <div class="rounded-2xl p-10 bg-[#F6F8FB]">
+                <img class="mb-6" src="img/icon1.svg" alt="" />
+                <h4 class="text-[22px] font-bold mb-2 lg:text-[20px]">
+                  Clarity drives action
+                </h4>
+                <p
+                  class="text-[22px] leading-7 md:text-[22px] lg:text-[20px] lg:leading-none"
+                >
+                  We believe better decisions start with better data— measured,
+                  visible, and trusted.
+                </p>
+              </div>
+              <div class="rounded-2xl p-10 bg-[#F6F8FB]">
+                <img class="mb-6" src="img/Icon2.svg" alt="" />
+                <h4 class="text-[22px] font-bold mb-2 leading-6 lg:text-[20px]">
+                  Sustainability is a systems problem
+                </h4>
+                <p class="text-[22px] leading-7 lg:text-[20px] lg:leading-none">
+                  We build tools that help teams connect the dots between
+                  operations, impact, and accountability.
+                </p>
+              </div>
+              <div class="rounded-2xl p-10 bg-[#F6F8FB]">
+                <img class="mb-6" src="img/Icon3.svg" alt="" />
+                <h4 class="text-[22px] font-bold mb-2 lg:text-[20px]">
+                  Progress over perfection
+                </h4>
+                <p class="text-[22px] leading-7 lg:text-[20px] lg:leading-none">
+                  We support real-world momentum—helping organizations move from
+                  ambition to measurable change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-10 lg:mt-25">
+          <div class="max-w-7xl mx-auto px-5 md:flex md:gap-16">
+            <div
+              class="pb-5 md:flex-1 opacity-0 translate-y-30 transition-all duration-700"
+              data-animate
+            >
+              <img
+                class="absolute z-99 hidden md:block opacity-0 -translate-y-24 rotate-30 transition-all duration-500"
+                data-rotate
+                src="img/about/StickerDos.svg"
+                alt=""
+              />
+              <img class="w-full" src="img/about/about2.svg" alt="" />
+            </div>
+            <div
+              class="md:flex-1 lg:flex lg:flex-col lg:justify-center lg:w-fit lg:min-w-150 lg:max-w-150 lg:px-22 opacity-0 translate-y-30 transition-all duration-700 delay-300"
+              data-animate
+            >
+              <p class="text-[19px] mb-3 text-[#6C6C6C] md:mb-0">
+                Founder's story
+              </p>
+              <h2
+                class="text-4xl font-[650] mb-7 md:text-[48px] lg:text-[56px]"
+              >
+                Eunji Park
+              </h2>
+
+              <p class="text-[19px] leading-6 font-medium">
+                Eunji founded Aetherfield with one goal: to help companies take
+                climate action without waiting for a perfect plan. With a
+                background in environmental systems and software design, she's
+                spent the past decade building tools that turn impact goals into
+                real-world outcomes. She still insists on biking to every
+                investor meeting.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="pb-10 bg-[#F6F8FB] md:pt-20 md:hidden">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="text-[36px] font-[650] mb-7 px-5 md:text-[48px]">
+              Meet the team
+            </h2>
+            <div class="px-5">
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 flex flex-col gap-1"
+              >
+                <p class="font-[650] text-[22px]">John McClelland</p>
+                <p class="text-[22px]">Director of Technology</p>
+                <p class="underline text-[22px]">jmcclelland@aetherfield.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pb-10 bg-[#F6F8FB] md:pt-20 hidden md:block">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="text-[36px] font-[650] mb-7 px-5 md:text-[48px]">
+              Meet the team
+            </h2>
+            <div class="px-5">
+              <div
+                class="border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="text-[16px]">Name</p>
+                <p class="text-[16px]">Title</p>
+                <p class="text-[16px] text-right">Contact</p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Eunji Park</p>
+                <p class="text-[18px]">Founder</p>
+                <p class="underline text-[18px] text-right">
+                  e.park@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Al Gorithm</p>
+                <p class="text-[18px]">Senior Systems Architect</p>
+                <p class="underline text-[18px] text-right">
+                  a.gorithm@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Cassandra Query</p>
+                <p class="text-[18px]">Head of Data Platforms</p>
+                <p class="underline text-[18px] text-right">
+                  c.query@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Sue Logic</p>
+                <p class="text-[18px]">Principal Software Engineer</p>
+                <p class="underline text-[18px] text-right">
+                  s.logic@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Dash Bordman</p>
+                <p class="text-[18px]">Product Manager</p>
+                <p class="underline text-[18px] text-right">
+                  d.bordman@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Greta Watt</p>
+                <p class="text-[18px]">Director of Climate Strategy</p>
+                <p class="underline text-[18px] text-right">
+                  g.watt@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Gail Force</p>
+                <p class="text-[18px]">Environmental Risk Analyst</p>
+                <p class="underline text-[18px] text-right">
+                  g.force@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Polly Nation</p>
+                <p class="text-[18px]">UX Designer</p>
+                <p class="underline text-[18px] text-right">
+                  p.nation@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Will O'Watt</p>
+                <p class="text-[18px]">Clean Energy Solutions Manager</p>
+                <p class="underline text-[18px] text-right">
+                  w.owatt@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Lana Terra</p>
+                <p class="text-[18px]">Earth Systems Research</p>
+                <p class="underline text-[18px] text-right">
+                  l.terra@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Ella Vation</p>
+                <p class="text-[18px]">Earth Systems Researcher</p>
+                <p class="underline text-[18px] text-right">
+                  e.vation@aetherfield.com
+                </p>
+              </div>
+              <div
+                class="border-t border-b border-[#DBE0EC] pt-4 pb-4 grid grid-cols-3 gap-4"
+              >
+                <p class="font-[650] text-[18px]">Phil Scope</p>
+                <p class="text-[18px]">Lifecycle Assessment Lead</p>
+                <p class="underline text-[18px] text-right">
+                  p.scope@aetherfield.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="text-center pt-10 pb-10 flex flex-col items-center">
+          <div class="max-w-7xl mx-auto px-5 lg:py-20">
+            <h3 class="text-[28px] leading-7 font-[650] mb-10 lg:text-[40px]">
+              We're hiring! Want to join the team?
+            </h3>
+            <div
+              class="bg-black text-white p-4 w-fit mx-auto hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+            >
+              <p>· View open roles</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[#FFF546] w-full">
+        <div class="max-w-7xl mx-auto px-5 pt-10 pb-10 md:pt-5 md:pb-5">
+          <div class="text-center md:flex md:justify-between">
+            <nav>
+              <ul
+                class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
+              >
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Product</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Journal</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">About</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Careers</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Get started</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+          </div>
+          <img class="w-full" src="img/Footer image.svg" alt="" />
+          <p
+            class="text-[16vw] text-center text-[#66640F] font-black font-sans md:text-[16.5vw] lg:text-[211px]"
+          >
+            Aetherfield
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Configuració de l'Intersection Observer
+      const observerOptions = {
+        threshold: 0.1, // Dispara quan el 10% de l'element és visible
+        rootMargin: "0px 0px -50px 0px", // Dispara 50px abans que l'element sigui completament visible
+      };
+
+      // Crear l'observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "translate-y-30");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      const scaleObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("scale-0", "opacity-0");
+            entry.target.classList.add("scale-100", "opacity-100");
+            scaleObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions); // <-- Usa el observerOptions que ya existe
+
+      document.querySelectorAll("[data-scale]").forEach((el) => {
+        scaleObserver.observe(el);
+      });
+
+      const observerDos = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "-translate-y-10");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animateDos]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      const rotateObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("opacity-0", "rotate-30");
+            entry.target.classList.add("opacity-100", "rotate-0");
+            rotateObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll("[data-rotate]").forEach((el) => {
+        rotateObserver.observe(el);
+      });
+
+      // Menú móvil
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      let menuOpen = false;
+
+      function closeMenu() {
+        menuOpen = false;
+        menuButton.textContent = "+";
+        menuButton.style.transform = "rotate(0deg)";
+        mobileMenu.classList.add("-translate-y-full", "opacity-0");
+        mobileMenu.classList.remove("translate-y-0", "opacity-100");
+      }
+
+      function openMenu() {
+        menuOpen = true;
+        menuButton.textContent = "×";
+        menuButton.style.transform = "rotate(90deg)";
+        mobileMenu.classList.remove("-translate-y-full", "opacity-0");
+        mobileMenu.classList.add("translate-y-0", "opacity-100");
+      }
+
+      menuButton.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (menuOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Cerrar menú al clicar fuera
+      document.addEventListener("click", (e) => {
+        if (
+          menuOpen &&
+          !mobileMenu.contains(e.target) &&
+          e.target !== menuButton
+        ) {
+          closeMenu();
+        }
+      });
+    </script>
+  </body>
+</html>

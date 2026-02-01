@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proyecto 2 - careers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "600px",
+            md: "800px",
+            lg: "1280px",
+            xl: "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <header
+        class="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md opacity-0 -translate-y-8 transition-all duration-500 delay-1000"
+        data-animateDos
+      >
+        <div
+          class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center"
+        >
+          <h1 class="font-bold text-3xl tracking-tight z-999">Aetherfield</h1>
+
+          <nav>
+            <ul
+              class="hidden md:flex lg:flex md:gap-5 text-[16px] font-bold lg:gap-6 lg:font-bold"
+            >
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="index.html">Product</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="journal.html">Journal</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="about.html">About</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="careers.html">Careers</a>
+              </li>
+              <li class="flex gap-1 cursor-pointer group">
+                <a href="index.html">Get Started</a>
+                <img
+                  class="hidden md:flex transition-transform duration-500 group-hover:translate-x-1"
+                  src="img/Arrow.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            id="menuButton"
+            class="md:hidden text-3xl font-bold transition-transform duration-300 cursor-pointer z-50"
+          >
+            +
+          </button>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden fixed top-0 left-0 w-full bg-white shadow-lg transition-all duration-500 -translate-y-full opacity-0 z-40"
+        >
+          <div class="px-5 pt-20 pb-10">
+            <nav>
+              <ul class="text-[32px] font-semibold space-y-6">
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="index.html">Product</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="journal.html">Journal</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="about.html">About</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="careers.html">Careers</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mt-10">
+              <div
+                class="bg-black text-white text-center p-4 hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p class="text-[20px]">Get started</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main
+        class="pb-0 pt-10 bg-[linear-gradient(to_bottom,#aad4fe_0%,#f8f1e1_100%)]"
+      >
+        <div
+          class="max-w-7xl mx-auto px-5 opacity-0 translate-y-30 transition-all duration-700"
+          data-animate
+        >
+          <h1
+            class="text-center mt-20 text-[40px] font-medium leading-8 mb-10 md:text-[64px] md:leading-14 lg:text-[80px] lg:leading-17"
+          >
+            Careers at <br /><span class="font-[650]">Aetherfield</span>
+          </h1>
+        </div>
+        <section class="pb-35">
+          <div
+            class="max-w-7xl mx-auto px-5 lg:min-w-[850px] lg:max-w-[850px] opacity-0 translate-y-30 transition-all duration-700"
+            data-animate
+          >
+            <article
+              class="flex flex-col bg-white rounded-xl p-6 gap-6 mb-5 md:flex-row md:p-10"
+            >
+              <div class="flex-1">
+                <h3 class="text-[22px] font-[650]">UX Designer</h3>
+                <p class="text-[#6C6C6C] mb-3">Full-time · Denver , CO</p>
+                <p class="text-[20px] leading-6 md:text-[18px]">
+                  Shape the tools that drive climate intelligence. You'll lead
+                  cross-functional teams to build thoughtful, scalable solutions
+                  for sustainability-forward organizations.
+                </p>
+              </div>
+              <div
+                class="p-3 bg-black text-white w-fit h-fit md:text-[12px] whitespace-nowrap hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p>View role</p>
+              </div>
+            </article>
+            <article
+              class="flex flex-col bg-white rounded-xl p-6 gap-6 mb-5 md:flex-row md:p-10"
+            >
+              <div class="flex-1">
+                <h3 class="text-[22px] font-[650]">Data Scientist</h3>
+                <p class="text-[#6C6C6C] mb-3">Full-time · Denver , CO</p>
+                <p class="text-[20px] leading-6 md:text-[18px]">
+                  Help build the intelligence layer for climate action. You'll
+                  turn complex sustainability data into clear, actionable
+                  insights for enterprise teams.
+                </p>
+              </div>
+              <div
+                class="p-3 bg-black text-white w-fit h-fit md:text-[12px] whitespace-nowrap hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p>View role</p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col bg-white rounded-xl p-6 gap-6 mb-5 md:flex-row md:p-10"
+            >
+              <div class="flex-1">
+                <h3 class="text-[22px] font-[650]">Product Manager</h3>
+                <p class="text-[#6C6C6C] mb-3">Full-time · Denver , CO</p>
+                <p class="text-[20px] leading-6 md:text-[18px]">
+                  Shape the tools that drive climate intelligence. You'll lead
+                  cross-functional teams to build thoughtful, scalable solutions
+                  for sustainability-forward organizations.
+                </p>
+              </div>
+              <div
+                class="p-3 bg-black text-white w-fit h-fit md:text-[12px] whitespace-nowrap hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p>View role</p>
+              </div>
+            </article>
+
+            <article
+              class="flex flex-col bg-transparent gap-6 border-2 border-dashed border-gray-400 rounded-2xl p-6 md:flex-row md:p-10"
+            >
+              <div class="flex-1">
+                <h3 class="text-[22px] font-[650]">Open application</h3>
+                <p class="text-[#6C6C6C] mb-3">Full-time · Denver , CO</p>
+                <p class="text-[20px] leading-6 md:text-[18px]">
+                  Don't see your role available? Apply for an open application!
+                </p>
+              </div>
+              <div
+                class="p-3 bg-black text-white w-fit h-fit md:text-[12px] whitespace-nowrap hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p>Apply now</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[#FFF546] w-full">
+        <div class="max-w-7xl mx-auto px-5 pt-10 pb-10 md:pt-5 md:pb-5">
+          <div class="text-center md:flex md:justify-between">
+            <nav>
+              <ul
+                class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
+              >
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Product</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Journal</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">About</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Careers</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Get started</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+          </div>
+          <img class="w-full" src="img/Footer image.svg" alt="" />
+          <p
+            class="text-[16vw] text-center text-[#66640F] font-black font-sans md:text-[16.5vw] lg:text-[211px]"
+          >
+            Aetherfield
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Configuració de l'Intersection Observer
+      const observerOptions = {
+        threshold: 0.1, // Dispara quan el 10% de l'element és visible
+        rootMargin: "0px 0px -50px 0px", // Dispara 50px abans que l'element sigui completament visible
+      };
+
+      // Crear l'observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "translate-y-30");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      const scaleObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("scale-0", "opacity-0");
+            entry.target.classList.add("scale-100", "opacity-100");
+            scaleObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions); // <-- Usa el observerOptions que ya existe
+
+      document.querySelectorAll("[data-scale]").forEach((el) => {
+        scaleObserver.observe(el);
+      });
+
+      const observerDos = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "-translate-y-10");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animateDos]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Menú móvil
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      let menuOpen = false;
+
+      function closeMenu() {
+        menuOpen = false;
+        menuButton.textContent = "+";
+        menuButton.style.transform = "rotate(0deg)";
+        mobileMenu.classList.add("-translate-y-full", "opacity-0");
+        mobileMenu.classList.remove("translate-y-0", "opacity-100");
+      }
+
+      function openMenu() {
+        menuOpen = true;
+        menuButton.textContent = "×";
+        menuButton.style.transform = "rotate(90deg)";
+        mobileMenu.classList.remove("-translate-y-full", "opacity-0");
+        mobileMenu.classList.add("translate-y-0", "opacity-100");
+      }
+
+      menuButton.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (menuOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Cerrar menú al clicar fuera
+      document.addEventListener("click", (e) => {
+        if (
+          menuOpen &&
+          !mobileMenu.contains(e.target) &&
+          e.target !== menuButton
+        ) {
+          closeMenu();
+        }
+      });
+    </script>
+  </body>
+</html>

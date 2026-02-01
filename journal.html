@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Proyecto 2 - Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "600px",
+            md: "800px",
+            lg: "1280px",
+            xl: "1400px",
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div>
+      <header
+        class="w-full fixed top-0 left-0 z-50 bg-transparent backdrop-blur-md opacity-0 -translate-y-8 transition-all duration-500 delay-1000"
+        data-animateDos
+      >
+        <div
+          class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center"
+        >
+          <h1 class="font-bold text-3xl tracking-tight z-999">Aetherfield</h1>
+
+          <nav>
+            <ul
+              class="hidden md:flex lg:flex md:gap-5 text-[16px] font-bold lg:gap-6 lg:font-bold"
+            >
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="index.html">Product</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="journal.html">Journal</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="about.html">About</a>
+              </li>
+              <li
+                class="hover:opacity-40 transition-all duration-500 cursor-pointer"
+              >
+                <a href="careers.html">Careers</a>
+              </li>
+              <li class="flex gap-1 cursor-pointer group">
+                <a href="index.html">Get Started</a>
+                <img
+                  class="hidden md:flex transition-transform duration-500 group-hover:translate-x-1"
+                  src="img/Arrow.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </nav>
+
+          <button
+            id="menuButton"
+            class="md:hidden text-3xl font-bold transition-transform duration-300 cursor-pointer z-50"
+          >
+            +
+          </button>
+        </div>
+
+        <div
+          id="mobileMenu"
+          class="md:hidden fixed top-0 left-0 w-full bg-white shadow-lg transition-all duration-500 -translate-y-full opacity-0 z-40"
+        >
+          <div class="px-5 pt-20 pb-10">
+            <nav>
+              <ul class="text-[32px] font-semibold space-y-6">
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="index.html">Product</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="journal.html">Journal</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="about.html">About</a>
+                </li>
+                <li
+                  class="border-b border-gray-200 pb-6 hover:opacity-40 transition-all duration-500"
+                >
+                  <a href="careers.html">Careers</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mt-10">
+              <div
+                class="bg-black text-white text-center p-4 hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+              >
+                <p class="text-[20px]">Get started</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="pb-0 mt-20">
+        <section>
+          <div
+            class="max-w-7xl mx-auto opacity-0 translate-y-30 transition-all duration-700"
+            data-animate
+          >
+            <img class="w-full" src="img/journal/journal1.svg" alt="" />
+          </div>
+        </section>
+        <section class="pt-6 pb-4">
+          <div class="max-w-7xl mx-auto px-5 lg:mt-10">
+            <h2 class="text-center mb-6 text-3xl font-bold lg:mb-10">
+              Latest articles
+            </h2>
+            <div
+              class="lg:grid lg:grid-cols-2 lg:gap-5 opacity-0 translate-y-30 transition-all duration-700"
+              data-animate
+            >
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal2.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal3.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal4.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal5.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal6.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+              <article class="mb-18">
+                <img
+                  class="w-full mb-5"
+                  src="img/journal/journal7.svg"
+                  alt=""
+                />
+                <h3 class="text-xl font-bold">
+                  How to Build a Climate-Ready Data Stack
+                </h3>
+                <p class="text-[18px] text-gray-500 mb-5">Tooling · 4 min</p>
+                <p class="text-[19px] font-semibold">
+                  A practical guide for sustainability teams on integrating
+                  emissions, waste, and energy data into modern workflows.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section
+          class="bg-[#F6F8FB] flex flex-col justify-center items-center pt-10 pb-10 md:py-17"
+        >
+          <div class="max-w-7xl mx-auto px-5">
+            <h2
+              class="text-center text-[26px] font-bold mb-6 md:text-[32px] lg:text-[40px]"
+            >
+              Subscribe to Aetherfield Journal
+            </h2>
+            <div
+              class="text-center p-4 bg-black text-white w-fit text-[20px] md:text-[16px] mx-auto hover:shadow-[0_8px_7px_rgba(0,0,0,0.15)] hover:text-gray-300 transition-all duration-500"
+            >
+              <p>· Sign up to newsletter</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-[#FFF546] w-full">
+        <div class="max-w-7xl mx-auto px-5 pt-10 pb-10 md:pt-5 md:pb-5">
+          <div class="text-center md:flex md:justify-between">
+            <nav>
+              <ul
+                class="text-[20px] flex flex-wrap gap-5 justify-center leading-4 mb-10 font-semibold text-[#66640F] md:gap-4 md:text-[18px] md:mt-2 md:mb-5"
+              >
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Product</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Journal</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">About</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Careers</a>
+                </li>
+                <li class="hover:opacity-50 transition-opacity duration-300">
+                  <a href="">Get started</a>
+                </li>
+              </ul>
+            </nav>
+            <p class="mb-5 text-[20px]">© 2025 · All rights reserved</p>
+          </div>
+          <img class="w-full" src="img/Footer image.svg" alt="" />
+          <p
+            class="text-[16vw] text-center text-[#66640F] font-black font-sans md:text-[16.5vw] lg:text-[211px]"
+          >
+            Aetherfield
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script>
+      // Configuració de l'Intersection Observer
+      const observerOptions = {
+        threshold: 0.1, // Dispara quan el 10% de l'element és visible
+        rootMargin: "0px 0px -50px 0px", // Dispara 50px abans que l'element sigui completament visible
+      };
+
+      // Crear l'observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "translate-y-30");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animate]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      const scaleObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.remove("scale-0", "opacity-0");
+            entry.target.classList.add("scale-100", "opacity-100");
+            scaleObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions); // <-- Usa el observerOptions que ya existe
+
+      document.querySelectorAll("[data-scale]").forEach((el) => {
+        scaleObserver.observe(el);
+      });
+
+      const observerDos = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Eliminar classes d'estat ocult
+            entry.target.classList.remove("opacity-0", "-translate-y-10");
+            // Afegir classes d'estat visible
+            entry.target.classList.add("opacity-100", "translate-y-0");
+
+            // Opcional: desconnectar després de l'animació (millor rendiment)
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // Aplicar l'observer a tots els elements amb data-animate
+      document.querySelectorAll("[data-animateDos]").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Menú móvil
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      let menuOpen = false;
+
+      function closeMenu() {
+        menuOpen = false;
+        menuButton.textContent = "+";
+        menuButton.style.transform = "rotate(0deg)";
+        mobileMenu.classList.add("-translate-y-full", "opacity-0");
+        mobileMenu.classList.remove("translate-y-0", "opacity-100");
+      }
+
+      function openMenu() {
+        menuOpen = true;
+        menuButton.textContent = "×";
+        menuButton.style.transform = "rotate(90deg)";
+        mobileMenu.classList.remove("-translate-y-full", "opacity-0");
+        mobileMenu.classList.add("translate-y-0", "opacity-100");
+      }
+
+      menuButton.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (menuOpen) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      // Cerrar menú al clicar fuera
+      document.addEventListener("click", (e) => {
+        if (
+          menuOpen &&
+          !mobileMenu.contains(e.target) &&
+          e.target !== menuButton
+        ) {
+          closeMenu();
+        }
+      });
+    </script>
+  </body>
+</html>
